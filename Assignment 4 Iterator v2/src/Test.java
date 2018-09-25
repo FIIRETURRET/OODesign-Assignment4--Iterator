@@ -3,7 +3,7 @@ import java.util.*;
 public class Test {
 
 	public static void main(String args[]) {
-        YugiCards yugiCards = new YugiCards();
+        /*YugiCards yugiCards = new YugiCards();
         KaibaCards kaibaCards = new KaibaCards();
 		
         ArrayList<MenuItem> yugiItems = yugiCards.getMenuItems();
@@ -21,6 +21,12 @@ public class Test {
 			System.out.print(menuItem.getName());
 			System.out.println("\t\t" + menuItem.getType());
 			System.out.println("\t" + menuItem.getCardText());
-		}
+		}*/
+		
+		KaibaCards kaibaCards = new KaibaCards();
+		YugiCards yugiCards = new YugiCards();
+		Waitress waitress = new Waitress(yugiCards, kaibaCards);
+		
+		waitress.printMenu();
 	}
 }

@@ -1,5 +1,5 @@
 
-public class KaibaCards {
+public class KaibaCards implements Menu{
 	static final int MAX_ITEMS = 3;
 	int numberOfItems = 0;
 	MenuItem[] menuItems;
